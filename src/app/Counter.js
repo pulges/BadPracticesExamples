@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import {
   increment,
   selectCount,
-} from './counterSlice';
+} from './Reducers/appReducer';
 
 class Counter extends PureComponent {
   handleClick = () => {

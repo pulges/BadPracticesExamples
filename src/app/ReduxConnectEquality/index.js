@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
-import Counter from '../../features/counter/Counter';
+import Counter from '../Counter';
 import UnpureRandomNr from '../UnpureRandomNr';
 
 class ReduxConnectEquality extends PureComponent {

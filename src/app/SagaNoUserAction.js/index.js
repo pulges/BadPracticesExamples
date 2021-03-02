@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { selectSel1, selectSel2 } from '../../features/counter/counterSlice'
+import { selectSel1, selectSel2 } from '../Reducers/appReducer'
 
 class SagaNoUserAction extends Component {
 
@@ -30,7 +30,6 @@ class SagaNoUserAction extends Component {
             <option>selected</option>
           </select>
         </div>
-        
       </div>
     )
   }

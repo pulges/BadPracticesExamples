@@ -2,6 +2,10 @@
   padding-bottom: 1em;
 }
 
+.bad-list li {
+  line-height: 1.6em;;
+}
+
 .random-nr {
   padding: 0.5em;
   display: inline-block;
@@ -13,3 +17,21 @@
   font-family: 'Courier New', Courier, monospace;
   border-radius: 4px;
 }
+
+.data-list {
+  margin:0;
+  padding:0;
+}
+
+.data-list li {
+  padding: 0;
+  margin:0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.data-list > li > div {
+  padding: 0.2em 0.4em 0.2em 0;
+  width: 60px;
+} 

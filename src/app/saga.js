@@ -1,6 +1,6 @@
-import { call, takeEvery, put, all, select } from "redux-saga/effects";
+import { takeEvery, put, all, select } from "redux-saga/effects";
 
-import { setSelect1, setSelect2, selectSel1, selectSel2 } from '../features/counter/counterSlice';
+import { setSelect1, setSelect2, selectSel1, selectSel2 } from './Reducers/appReducer';
 
 // INCORRECT
 
@@ -34,8 +34,8 @@ export default function* rootSaga() {
 }
 
 
+// BETTER harder to stumble on feedback loop
 
-// BETTER
 // export function* value1saga(action) {
 //   yield put(setSelect1(action.data));
 // }

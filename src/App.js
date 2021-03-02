@@ -10,6 +10,7 @@ import NoPureComponent from './app/NoPureComponent';
 import ReduxConnectEquality from './app/ReduxConnectEquality/index.js';
 import ReduxStateImmutability from './app/ReduxStateImmutability';
 import SagaNoUserAction from './app/SagaNoUserAction.js';
+import TooMuchDataConnected from './app/TooMuchDataConnected';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         <Route path="/redux-state-not-immutable">
           <ReduxStateImmutability />
         </Route>
+        <Route path="/too-much-data-connected">
+          <TooMuchDataConnected />
+        </Route>
         <Route path="/saga-no-user-action">
           <SagaNoUserAction />
         </Route>
@@ -36,7 +40,7 @@ function App() {
           <h1>
             Bad practices list:
           </h1>
-          <ul>
+          <ul className="bad-list">
             <li>
               <Link to="/no-pure-component">Not using PureComponent</Link>
             </li>
@@ -47,7 +51,10 @@ function App() {
               <Link to="/saga-no-user-action">Saga no user action</Link>
             </li>
             <li>
-              <Link to="/redux-state-not-immutable">Redux state not immutable (new redux fixes the problem)</Link>
+              <Link to="/too-much-data-connected">Too much data connected for component</Link>
+            </li>
+            <li>
+              <Link to="/redux-state-not-immutable">Redux state not immutable (new redux fixes the problem by crashing early)</Link>
             </li>
           </ul>
         </Route>
