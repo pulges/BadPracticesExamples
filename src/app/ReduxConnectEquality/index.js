@@ -32,7 +32,7 @@ class ReduxConnectEquality extends PureComponent {
 }
 
 // If blank state remains constant (use this constant), renders are not called.
-const BLANK_FOO = {};
+// const BLANK_FOO = {};
 
 const mapStateToProps = (state) => {
   return {
